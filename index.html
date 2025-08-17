@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Sim Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>🔹 Tracker Menu</h2>
+      <ul>
+        <li><a href="#profile">Lacey Saunders</a></li>
+        <li><a href="#charisma">Charisma Skill</a></li>
+        <li><a href="#charisma-challenges">Charisma Challenges</a></li>
+        <li><a href="#social">Social Networking</a></li>
+        <li><a href="#social-challenges">Social Challenges</a></li>
+      </ul>
+      <button onclick="saveProgress()">💾 Save</button>
+      <button onclick="loadProgress()">📂 Load</button>
+    </aside>
+
+    <main class="content">
+      <section id="profile" class="panel">
+        <h2>🧍 Lacey Saunders Profile</h2>
+        <p><strong>Traits:</strong> 
+          <span class="tooltip" title="Ambitious: Faster career progress">💼</span>
+          <span class="tooltip" title="Family-oriented: Stronger family bonds">👨‍👩‍👧</span>
+          <span class="tooltip" title="Bookworm: Reads faster">📚</span>
+          <span class="tooltip" title="Athletic: Gains fitness faster">🏃</span>
+          <span class="tooltip" title="Friendly: Easier relationships">😊</span>
+          <span class="tooltip" title="Adventurous: Rebel influence">🎒</span>
+          <span class="tooltip" title="Kleptomaniac: Degree unlock">🕵️</span>
+        </p>
+        <p><strong>Degree:</strong> Business (Grade A)</p>
+        <p><strong>Careers:</strong></p>
+        <ul>
+          <li>Daycare (Level 3–5)</li>
+          <li>Business (Level 1–10)</li>
+          <li>Bookstore (Part-time)</li>
+        </ul>
+      </section>
+
+      <section id="charisma" class="panel">
+        <h2>🎤 Charisma Skill Tracker</h2>
+        <ul>
+          <li><label><input type="checkbox" data-id="charisma1" /> Level 1: Friendly + Charming Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma2" /> Level 2: Amusing Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma3" /> Level 3: Interesting Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma4" /> Level 4: Flirty Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma5" /> Level 5: Great Greeting + Smooth Recovery</label></li>
+          <li><label><input type="checkbox" data-id="charisma6" /> Level 6: Funny Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma7" /> Level 7: Impressive Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma8" /> Level 8: Hilarious Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma9" /> Level 9: Loving Greeting</label></li>
+          <li><label><input type="checkbox" data-id="charisma10" /> Level 10: Irresistible Greeting</label></li>
+        </ul>
+      </section>
+
+      <section id="charisma-challenges" class="panel">
+        <h2>🧑‍🤝‍🧑 Charisma Challenges</h2>
+        <ul>
+          <li><label><input type="checkbox" data-id="challenge1" /> Celebrity — <span class="tooltip" title="Start with higher relationship">🌟</span></label></li>
+          <li><label><input type="checkbox" data-id="challenge2" /> Personable — <span class="tooltip" title="Learn traits faster">🧠</span></label></li>
+          <li><label><input type="checkbox" data-id="challenge3" /> Super Friendly — <span class="tooltip" title="Friendships never decay">💖</span></label></li>
+          <li><label><input type="checkbox" data-id="challenge4" /> Everybody’s Best Friend — <span class="tooltip" title="Skip good friends tier">🏅</span></label></li>
+          <li><label><input type="checkbox" data-id="challenge5" /> Comedian — <span class="tooltip" title="Jokes rarely fail">🎭</span></label></li>
+        </ul>
+      </section>
+
+      <section id="social" class="panel">
+        <h2>📱 Social Networking Skill Tracker</h2>
+        <ul>
+          <li><label><input type="checkbox" data-id="social1" /> Level 1: Blog App + Personal Theme</label></li>
+          <li><label><input type="checkbox" data-id="social2" /> Level 5: Retextured Blog Theme</label></li>
+          <li><label><input type="checkbox" data-id="social3" /> Level 6: Sim Finder App</label></li>
+          <li><label><input type="checkbox" data-id="social4" /> Level 8: Music Blog Theme</label></li>
+          <li><label><input type="checkbox" data-id="social5" /> Level 9: Relationship Transmogrifier</label></li>
+          <li><label><input type="checkbox" data-id="social6" /> Level 10: Best Friend + Partner Settings</label></li>
+        </ul>
+      </section>
+
+      <section id="social-challenges" class="panel">
+        <h2>🌐 Social Networking Challenges</h2>
+        <ul>
+          <li><label><input type="checkbox" data-id="socialchallenge1" /> Blog Baron — <span class="tooltip" title="More donations from followers">💰</span></label></li>
+          <li><label><input type="checkbox" data-id="socialchallenge2" /> Professional Greeter — <span class="tooltip" title="Excited buff on meeting sims">🎉</span></label></li>
+          <li><label><input type="checkbox" data-id="socialchallenge3" /> Match Maker — <span class="tooltip" title="Unlock Best Friends Forever setting">💞</span></label></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
